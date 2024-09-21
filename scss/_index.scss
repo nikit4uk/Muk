@@ -322,9 +322,10 @@ ul{
     &-wrap{
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
+      grid-gap: 1.5rem 1rem;
+      justify-content: flex-end;
       @media screen and (max-width:850px) {
-        gap: 0;
+        grid-gap: 0;
         grid-template-columns: repeat(1, 1fr);
       }
     }
@@ -445,7 +446,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
-    gap: 2.3rem;
+    grid-gap: 2.3rem;
     @media screen and (max-width:850px) {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -557,7 +558,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    gap: 1.9rem;
+    grid-gap: 1.9rem;
     padding: 8.2rem 0 0;
     @media screen and (max-width:850px) {
       grid-template-columns: repeat(2, 1fr);
@@ -827,7 +828,7 @@ ul{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
-    gap: 1.9rem;
+    grid-gap: 1.9rem;
     padding: 2.7rem 0 0;
     @media screen and (max-width:850px) {
       grid-template-columns: repeat(1, 1fr);
@@ -899,7 +900,7 @@ ul{
     grid-template-columns: 1fr 1.05fr;
     justify-content: center;
     position: relative;
-    gap: 1rem;
+    grid-gap: 1rem;
     padding: 11rem 5.9rem 0 4.2rem;
     background: linear-gradient(303.66deg, #000000 5.82%, #666666 278.52%);
     border: 0.5px solid #E5E5E5;
@@ -961,7 +962,7 @@ ul{
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1.15fr 1fr;
     justify-content: center;
-    gap: 0rem 4.8rem;
+    grid-gap: 0rem 4.8rem;
     z-index: 1;
   }
   &__list{
