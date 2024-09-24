@@ -6,19 +6,20 @@ $(document).ready(function () {
     const toggleMenu = (event, item) => {
       $(item).toggleClass('is-active');
       $('html').toggleClass('add-overflow');
+      $('.overflow').toggleClass('active');
       $('.header nav').toggleClass('active-menu');
     }
   
-    $('#js-hamburger').on('click', function (event) {
+    $('#menu_btn').on('click', function (event) {
       event.preventDefault();
   
-      toggleMenu(event, $('#js-hamburger'));
+      toggleMenu(event, $('#menu_btn'));
     });
   
     if (window.innerWidth <= 600) {
           $('.header__wrapper a').each(function () {
               $(this).on('click', function (event) {
-                  toggleMenu(event, $('#js-hamburger'));
+                  toggleMenu(event, $('#menu_btn'));
               });
           });
       }
@@ -44,7 +45,12 @@ $(document).ready(function () {
       const swiper = new Swiper('.swiper', {
         loop: true,
         spaceBetween: 30,
+        // autoplay: {
+        //   delay: 2000,
+        //   disableOnInteraction: false,
+        // },
         pagination: {
+          clickable: true,
           el: '.swiper-pagination',
         },
       });
