@@ -51,7 +51,6 @@ $(document).ready(function () {
     });
   
   $('.lang__switcher').on('click', function (event) {
-      event.stopPropagation();
       $('.switcher').toggleClass('active');
   });
 
