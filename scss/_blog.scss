@@ -7,7 +7,7 @@
         color: #000000;
         text-decoration: underline;
         @media screen and (max-width:850px) {
-        font-size: 12px;
+            font-size: 12px;
         }
     }
     &__header{
@@ -15,6 +15,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 4.8rem 0 1.2rem;
+        @media screen and (max-width:850px) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
     }
     &__title{
         max-width: 80%;
@@ -36,6 +40,9 @@
         line-height: 1.2;
         letter-spacing: 0.1em;
         color: #000000;
+        @media screen and (max-width:850px) {
+            order: -1;
+        }
     }
     &__body{
         font-size: clamp(14px, 1.6rem, 24px);
@@ -45,8 +52,11 @@
         color: #000000;
         border-radius: 1rem;
         padding: 4rem 3rem;
-        padding: 5.1rem 9rem 3.7rem 4.4rem;
+        padding: 5.1rem 4.5rem 3.7rem;
         background-color: #fff;
+        @media screen and (max-width:850px) {
+            padding: 3rem 2rem;
+        }
         p{
             margin-bottom: 2.3rem;
         }
@@ -60,6 +70,20 @@
             list-style: disc;
             padding-left: 2.5rem;
             margin-bottom: 2.5rem;
+        }
+        span{
+            text-align: center;
+            p{
+                text-align: center;
+            }
+        }
+        img{
+            max-width: 80rem;
+            margin: auto;
+        }
+        div{
+            padding: 0 1.5rem;
+            border-left: 3px solid #ECECEC;
         }
     }
     &__footer{
